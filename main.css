@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer sticks to the bottom */
+}
+
+header {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid #9b59b6;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #9b59b6;
+    margin-bottom: 1rem;
+}
+
+main {
+    flex: 1; /* Fills available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem; /* Space between blocks */
+}
+
+.introduction,
+.projects-overview {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background: #1c1c1c;
+    border: 1px solid #9b59b6;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+nav {
+    margin: 2rem 0; /* Center navigation between content and footer */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* General Button Styles (Shared) */
+.custom-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #9b59b6;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+
+.custom-button:hover {
+    background-color: #9b59b6;
+    color: #121212;
+}
+
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    border-top: 2px solid #9b59b6;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+/* General Chip Styles */
+.project-chip {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #1c1c1c;
+    color: #e0e0e0;
+    border: 2px solid #9b59b6;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: visible; /* Allow the status badge to extend outside the chip */
+}
+
+/* Title and Status Container */
+.title-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title-status h2 {
+    font-size: 1.5rem;
+    color: #9b59b6;
+}
+
+/* Status Badge */
+.status {
+    position: absolute;
+    top: -0.75rem; /* Move above the chip */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    color: #121212;
+    background-color: transparent; /* Default */
+}
+
+/* Description */
+.project-chip .description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Links */
+.project-chip .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-chip .links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #9b59b6;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-chip .links a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}
+
+.project-chip .links a:hover {
+    background-color: #9b59b6;
+    color: #121212;
+}
+
+.project-chip .links a[style*="pointer-events: none"] {
+    border-color: #555;
+}
+
+/* Updated Status Colors for Better Readability */
+.status.finished {
+    background-color: #32cd32; /* Lime green with good contrast */
+    color: #fff;
+}
+
+.status.in-progress {
+    background-color: #ffeb3b; /* Bright yellow */
+    color: #121212; /* Dark text for contrast */
+}
+
+.status.shelved {
+    background-color: #ff9800; /* Vibrant orange */
+    color: #121212; /* Dark text for contrast */
+}
+
+.status.scrapped {
+    background-color: #f44336; /* Bright red */
+    color: #fff;
+}
+
+.status.dummy {
+    background-color: #9c27b0; /* Vibrant purple */
+    color: #fff;
+}

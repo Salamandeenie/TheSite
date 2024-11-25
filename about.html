@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>About Kali Renalore</h1>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <p>
+                As you already know, I am <strong>Kali Renalore</strong>. I am <span id="age">x</span> years old. As of writing this, I am pursuing my dreams at <strong>SUNY Canton</strong>.
+            </p>
+        </section>
+
+        <section class="about-goals">
+            <p>
+                I strive for a future of game design where anyone and everyone can have their voices heard, and their worlds immortalized in 1s and 0s.
+            </p>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="back-button">Back to Home</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kali Renalore. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Calculate approximate age based on the year 2006
+        const birthYear = 2006;
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - birthYear;
+
+        // Dynamically insert the calculated age
+        document.getElementById('age').textContent = age;
+    </script>
+</body>
+</html>
