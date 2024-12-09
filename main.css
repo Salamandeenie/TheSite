@@ -84,7 +84,6 @@ nav ul li {
     color: #121212;
 }
 
-
 /* Footer */
 footer {
     background: #1c1c1c;
@@ -102,7 +101,7 @@ footer {
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-    margin: 2rem auto;
+    margin: 0.25rem auto;
     padding: 1.5rem;
     background: #1c1c1c;
     color: #e0e0e0;
@@ -144,7 +143,6 @@ footer {
 /* Description */
 .project-chip .description {
     font-size: 1rem;
-    margin-bottom: 1rem;
     line-height: 1.4;
     text-align: center;
 }
@@ -183,6 +181,26 @@ footer {
     border-color: #555;
 }
 
+/* Icons container */
+.project-chip .icons-container {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    border:  #9b59b6 solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Language icons */
+.project-chip .language-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
 /* Updated Status Colors for Better Readability */
 .status.finished {
     background-color: #32cd32; /* Lime green with good contrast */
@@ -207,4 +225,69 @@ footer {
 .status.dummy {
     background-color: #9c27b0; /* Vibrant purple */
     color: #fff;
+}
+
+/* Skills Section */
+.skills-section h2 {
+    color: #9b59b6;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.skills-table tr {
+    border-bottom: 1px solid #9b59b6;
+}
+
+.skills-table td {
+    padding: 0.8rem;
+    vertical-align: middle;
+}
+
+.skills-table td:first-child {
+    width: 50px;
+}
+
+.skill-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+}
+
+/* History Section */
+.history-section h2 {
+    color: #9b59b6;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.history-table tr {
+    border-bottom: 1px solid #9b59b6;
+}
+
+.history-table td {
+    padding: 0.8rem;
+    vertical-align: top;
+    color: #e0e0e0;
+}
+
+.history-table td:first-child {
+    font-weight: bold;
+    width: 80px;
+    color: #9b59b6;
 }
